@@ -12,6 +12,12 @@
     flex-direction: column;
     justify-content: center;
     margin: 5px 0;
+
+    :hover, .active {
+        background-color: #f0f0f0;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
 }
 .collapse-box h3 {
     font-weight: normal;
@@ -42,14 +48,14 @@
     font-size: 20px;
     position: absolute;
     color: black;
-    right: 10px;
+    right: 15px;
     top: 15px;
 }
 .active:after {
     content: '\2212';
     position: absolute;
     color: black;
-    right: 10px;
+    right: 15px;
     top: 15px;
 }
 .content {
@@ -57,4 +63,5 @@
     max-height: 0;
     padding: 0 10px;
     transition: max-height .2s ease-in-out;
+    background-color: #f0f0f0;
 }
