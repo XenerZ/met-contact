@@ -36,15 +36,15 @@
     height: auto;
     border-bottom: 1px solid #fe8941;
     margin: 5px 0;
-    padding: 0 10px;
+    /* padding: 0 10px; */
 }
 .drop-box p {
-    visibility: hidden;
-    height: 0;
-    transform: scaleY(0);
+    /* visibility: hidden;
+    height: 0; */
+    /* transform: scaleY(0);
     transform-origin: 50% 0;
-    position: absolute;
-    transition: .1s;
+    position: absolute; */
+    /* transition: .1s; */
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -52,7 +52,7 @@
     color: #800080;
     font-weight: 600;
 }
-.contact-dropdown a:focus + p,
+/* .contact-dropdown a:focus + p,
 .reclamation-dropdown a:focus +p,
 .shop-dropdown a:focus + p,
 .account-dropdown a:focus +p,
@@ -68,4 +68,20 @@
 .account-dropdown a:focus img,
 .company-data a:focus img {
     transform: rotate(180deg);
+} */
+.collapse {
+    cursor: pointer;
+    border: none;
+    border-bottom: #fe8941;
+    background-color: transparent;
+    text-align: left;
+    outline: none;
+}
+.active, .collapse:hover {
+}
+.content {
+    overflow: hidden;
+    display: none;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
