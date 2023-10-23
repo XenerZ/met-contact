@@ -1,63 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    Ł
     <div class="contact-menu">
-        <div class="contact-dropdown drop-box">
-            <button type="button" class="collapse"><h3>Skontaktuj się z nami</h3></button>
-            <!-- <img width="20px" src="https://metalkas.com.pl/skins/user/rwd_primary_1/images/ico_arrow_down_small.png" alt=""> -->
-            <p class="content">
-                Napisz do nas: sklep@metalkas.com.pl<br>
-                Zadzwoń: +48 572 706 812
-            </p>
-        </div>
-        <div class="reclamation-dropdown drop-box">
-            <h3>Jak mogę zgłosić reklamcję?</h3>
-            <img width="20px" src="https://metalkas.com.pl/skins/user/rwd_primary_1/images/ico_arrow_down_small.png" alt="">
-            <p>
-                Reklamację mozesz zgłosić pisząc do nas na adres: reklamacje@metalkas.com.pl, bądź dzwoniąc do nas na numer: +48 509 827 533.<br><br>
-                Jeśli potrzebujesz pomocy serwisanta mozesz napisać na adres: serwis@metalkas.com.pl, bądź dzwonić pod numer: +48 691 432 455.
-                <br><br>
-                Więcej informacji znajdziesz <a href="/zwroty-i-reklamacje">Tutaj
-            </p>
-        </div>
-        <div class="shop-dropdown drop-box">
-            <h3>Gdzie znajdę salony sprzedazy?</h3>
-            <img width="20px" src="https://metalkas.com.pl/skins/user/rwd_primary_1/images/ico_arrow_down_small.png" alt="">
-            <p>
-                Listę z lokalizacjami naszych salonów znajdziesz pod ponizszym linkiem:<br><br>
-                Lista salonów
-            </p>
-        </div>
-        <div class="account-dropdown drop-box">
-            <h3>Na jakie konto mogę wysłać środki za zamówienie?</h3>
-            <img width="20px" src="https://metalkas.com.pl/skins/user/rwd_primary_1/images/ico_arrow_down_small.png" alt="">
-            <p>
-                Dane do wykonania przelewu za zamówienie:<br>
-                Numer konta: 66 1020 1462 0000 7002 0366 6732<br>
-                Tytułem przelewu jest numer zamówienia złozonego poprzez stronę internetową.
-            </p>
-        </div>
-        <div class="company-data drop-box">
-            <h3>Dane adresowe firmy</h3>
-            <img width="20px" src="https://metalkas.com.pl/skins/user/rwd_primary_1/images/ico_arrow_down_small.png" alt="">
-            <p>
-                Metalkas S.A.<br>
-                p. Nowotoruńska 40<br>
-                85-840 Bydgoszcz<br>
-                NIP: 9671153563<br>
-                KRS: 0000903064
-            </p>
-        </div>
+        <div class="collapse-box">
+            <button type="button" class="collapse">
+                <h3>Skontaktuj się z nami</h3>
+            </button>
+
+            <div class="content">
+                <p>
+                    Napisz do nas: sklep@metalkas.com.pl<br>
+                    Zadzwoń: +48 572 706 812
+                </p>
+            </div>
         </div>
 
-        <script src="contact.js"></script>
+        <div class="collapse-box">
+            <button type="button" class="collapse">
+                <h3>Jak mogę zgłosić reklamcję?</h3>
+            </button>
+
+            <div class="content">
+                <p>
+                    Reklamację mozesz zgłosić pisząc do nas na adres: reklamacje@metalkas.com.pl, bądź dzwoniąc do nas
+                    na
+                    numer: +48 509 827 533.<br><br>
+                    Jeśli potrzebujesz pomocy serwisanta mozesz napisać na adres: serwis@metalkas.com.pl, bądź dzwonić
+                    pod
+                    numer: +48 691 432 455.
+                    <br><br>
+                    Więcej informacji znajdziesz <a href="/zwroty-i-reklamacje">Tutaj</a>
+                </p>
+            </div>
+        </div>
+        <div class="collapse-box">
+            <button type="button" class="collapse">
+                <h3>Gdzie znajdę salony sprzedazy?</h3>
+            </button>
+
+            <div class="content">
+                <p>
+                    Listę z lokalizacjami naszych salonów znajdziesz pod ponizszym linkiem:<br><br>
+                    <a href="#">Lista salonów</a href="#">
+                </p>
+            </div>
+        </div>
+        <div class="collapse-box">
+            <button type="button" class="collapse">
+                <h3>Na jakie konto mogę wysłać środki za zamówienie?</h3>
+            </button>
+
+            <div class="content">
+                <p>
+                    Dane do wykonania przelewu za zamówienie:<br>
+                    Numer konta: 66 1020 1462 0000 7002 0366 6732<br>
+                    Tytułem przelewu jest numer zamówienia złozonego poprzez stronę internetową.
+                </p>
+            </div>
+        </div>
+        <div class="collapse-box">
+            <button type="button" class="collapse">
+                <h3>Dane adresowe firmy</h3>
+            </button>
+
+            <div class="content">
+                <p>
+                    Metalkas S.A.<br>
+                    ul. Nowotoruńska 40<br>
+                    85-840 Bydgoszcz<br>
+                    NIP: 9671153563<br>
+                    KRS: 0000903064
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
 
 </body>
+
 </html>

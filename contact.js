@@ -6,10 +6,8 @@ for(i = 0; i < coll.length; i++) {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
         if (content.style.maxHeight) {
-            content.style.display = "none";
             content.style.maxHeight = null;
         } else {
-            content.style.display = "block";
             content.style.maxHeight = content.scrollHeight + "px";
         }
     });

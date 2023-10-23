@@ -6,69 +6,28 @@
     align-items: center;
     box-sizing: border-box;
 }
-.contact-menu h3 {
-    font-weight: 100;
+.collapse-box {
+    height: auto;
+    border-bottom: 2px solid #fe8941;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 0;
 }
-.contact-menu div {
+.collapse-box h3 {
+    font-weight: normal;
+    margin-right: 18px;
+}
+.contact-menu .collapse-box {
     width: 70%;
     position: relative;
     height: auto;
+    padding: 0 10px;
 }
-.contact-menu div a {
+.collapse-box .content a {
     text-decoration: none;
-    color: inherit;
-    width: 100%;
-}
-.contact-menu div a h3 {
-    margin-right: 35px;
-}
-.contact-menu div a img {
-    grid-column: 2;
-    position: absolute;
-    top: 25px;
-    right: 5%;
-    transition: transform .3s ease-in-out;
-}
-.drop-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    border-bottom: 1px solid #fe8941;
-    margin: 5px 0;
-    /* padding: 0 10px; */
-}
-.drop-box p {
-    /* visibility: hidden;
-    height: 0; */
-    /* transform: scaleY(0);
-    transform-origin: 50% 0;
-    position: absolute; */
-    /* transition: .1s; */
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.drop-box p a {
     color: #800080;
-    font-weight: 600;
+    font-weight: 800;
 }
-/* .contact-dropdown a:focus + p,
-.reclamation-dropdown a:focus +p,
-.shop-dropdown a:focus + p,
-.account-dropdown a:focus +p,
-.company-data a:focus + p {
-    visibility: visible;
-    transform: scaleY(1);
-    position: relative;
-    height: auto;
-}
-.contact-dropdown a:focus img,
-.reclamation-dropdown a:focus img,
-.shop-dropdown a:focus img,
-.account-dropdown a:focus img,
-.company-data a:focus img {
-    transform: rotate(180deg);
-} */
 .collapse {
     cursor: pointer;
     border: none;
@@ -76,12 +35,26 @@
     background-color: transparent;
     text-align: left;
     outline: none;
+    width: 100%;
 }
-.active, .collapse:hover {
+.collapse:after {
+    content: '\002B';
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    right: 10px;
+    top: 15px;
+}
+.active:after {
+    content: '\2212';
+    position: absolute;
+    color: black;
+    right: 10px;
+    top: 15px;
 }
 .content {
     overflow: hidden;
-    display: none;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    padding: 0 10px;
+    transition: max-height .2s ease-in-out;
 }
