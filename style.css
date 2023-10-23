@@ -1,0 +1,71 @@
+.contact-menu {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.contact-menu h3 {
+    font-weight: 100;
+}
+.contact-menu div {
+    width: 70%;
+    position: relative;
+    height: auto;
+}
+.contact-menu div a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+.contact-menu div a h3 {
+    margin-right: 35px;
+}
+.contact-menu div a img {
+    grid-column: 2;
+    position: absolute;
+    top: 25px;
+    right: 5%;
+    transition: transform .3s ease-in-out;
+}
+.drop-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    border-bottom: 1px solid #fe8941;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.drop-box p {
+    visibility: hidden;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    position: absolute;
+    transition: .1s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.drop-box p a {
+    color: #800080;
+    font-weight: 600;
+}
+.contact-dropdown a:focus + p,
+.reclamation-dropdown a:focus +p,
+.shop-dropdown a:focus + p,
+.account-dropdown a:focus +p,
+.company-data a:focus + p {
+    visibility: visible;
+    transform: scaleY(1);
+    position: relative;
+    height: auto;
+}
+.contact-dropdown a:focus img,
+.reclamation-dropdown a:focus img,
+.shop-dropdown a:focus img,
+.account-dropdown a:focus img,
+.company-data a:focus img {
+    transform: rotate(180deg);
+}
