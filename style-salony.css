@@ -1,0 +1,14 @@
+.shops-box {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.shop-element {
+    width: 70%;
+    border-bottom: 2px solid #fe8941;
+    padding: 5px 10px;
+}
